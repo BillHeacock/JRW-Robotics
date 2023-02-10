@@ -1,6 +1,6 @@
 :Author: ChaosBuster
 :Email: william.heacock@msdmartinsville.org
-:Date: 22/11/2022
+:Date: 11/2/2023
 :Revision: version#
 :License: Public Domain
 
@@ -8,10 +8,9 @@ Describe your project
 This sketch reads 3 lidar sensors, 4 switches and outputs the data to the OLED Screen
 A lidar sensor does not have a perminent memory. The default I2C address is always 0X29.
 We use a library called ezswitch to simplify and improve performance of pushbutton switches
-We use an small OLED screen to monitor the lidar sensors and buttons. 
-Buttons are set to a high (digital 1), when pushed they go low (digital 0)
+We use a small OLED screen to monitor the lidar sensors and buttons. 
+Buttons are set to a high (digital 1) with internal pullups, when pushed they go low (digital 0)
 Buttons use pins D6,D7,D8,D9. The other side of each button connection connects to ground.
-The buttons use the internal pullup resistor built in to the Arduino
 
 To use multiple lidars, they have to be initialized to different I2C addresses. 
 In this case we used 0x30, 0x31, 0x32.
@@ -19,7 +18,7 @@ This must be done at power up, otherwise the sensor will revert to 0x29.
 
 The lidar sensor.
 Unless it is clearly noted, the sensor will be designed for 3.3V. These are the cheapest and most common.
-Some manufactureres have built in circuitry that allows for 5V operation.
+Some manufactureres have built in circuitry that allows for 5V operation. This is what we use.
 Also they must have a pin for the Xshut connection. Some do not.
 This pin is used to disable the lidar so that it can be given a new address.
 The ones used in the test were 5V lidar modules with the Xshut pin.

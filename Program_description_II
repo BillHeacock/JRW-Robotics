@@ -1,0 +1,19 @@
+:Author: ChaosBuster
+:Email: william.heacock@msdmartinsville.org
+:Date: 22/11/2022
+:Revision: version#
+:License: Public Domain
+
+This Sketch is designed to be used to make an autonomous robot that can navigate a maze. 
+It uses three sensors to find distances at the front, right and left sides of the robot
+Four switches are designed to give the user some flexibility.
+Each button can run the robot, each with custom settings.
+Lidars use digital pins D8,D9,D10.  You can use most digital pins
+20 (SDA), 21 (SCL)
+Buttons are set to a high (digital 1), when pushed they go low (digital 0)
+Buttons use pins D4,D5,D6,D7. The other side of each button connection connects to ground.
+The buttons use the internal pullup resistor built in to the Arduino
+
+Lastly, the program can be monitored with the serial monitor along with (or instead of) the OLED.
+However, serial print uses a lot of resources
+in the processor and should be commented out for normal operation

@@ -1,0 +1,29 @@
+Here is a list of functions we started with.
+loop1   These are 4 seperate programs that will run when a buttion is pushed
+loop2
+loop3
+loop4
+
+navigate  This function compares the lidar distance measurement to a preset distance.
+          The presets are "frontlimit", "sidelimit"
+          
+goStraight    This sets the motors to go straight at the prest speed.
+
+leftTurn      These functions use speed, turnOffset and duration to determine how we turn
+rightTurn
+
+readSensors  This function reads and smooths the distances from the Lidar sensors.
+              This reading in in millimeters
+
+OLED        This funtion formats and displays readings on the Display.
+            If the reading exceeds 800mm, the display will read "C" for clear
+            It also displays the buttons and their status
+            
+
+serialMonitor   This can be used to help troubleshoot
+                It should not be used for normal operation as it slows down things too much
+
+initializeDisplay     These last 3 functions goes through the setup out inputs and outputs
+initializeSensors     They are only run once. When we power it up or hit the reset button.
+initializeButtons
+  

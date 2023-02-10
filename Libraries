@@ -1,0 +1,13 @@
+There are several libraries used in this sketch. Below are some links to help understand what they can do.
+The idea was to have these tool available while developing the ability to navigate a maze.
+There may be better options out there, but this is a start.
+
+<PID_v1.h>      Algorithm that makes small adjustments to motor power in order to achieve more precise and smooth robot movement
+<Smoothed.h>    Smooth the lidar readings  https://github.com/MattFryer/Smoothed
+                https://github.com/br3ttb/Arduino-PID-Library
+<ezButton.h>    Debounces buttons and more  https://github.com/ArduinoGetStarted/button
+<Adafruit_SSD1306.h> OLED Library (adafruit) https://github.com/adafruit/Adafruit_SSD1306
+<VL53L0X.h>     Lidar library (Pololu)  https://github.com/pololu/vl53l0x-arduino
+<Wire.h>        I2C communication library. Both the OLED and the Lidars use I2C to communicate with the Arduino
+                It's convienent since it uses just 2 wires (plus power and ground)
+                https://www.arduino.cc/reference/en/language/functions/communication/wire/

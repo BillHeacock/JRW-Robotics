@@ -1,0 +1,22 @@
+Variables used in this sketch. We sometimes assign a value to them when we create them.
+
+  integer variables
+SFront      An integer can be any number between 0 and 65,535 or 16 bits
+SLeft
+SRight       These are variables for holding the smoothed data
+FrontLimit   These two variables hold the distance we compare to with the Lidars
+SideLimit 
+speed         Determines the speed of the motors
+turnOffset   This is how much we subtract from the inside wheel in a turn
+duration     Time to be in the turn to help make turns precise
+    
+  float variables
+Kp        PID variables
+Ki        PID Control stands for Proportional-Integral-Derivative feedback control 
+Kd       For help go to   https://renegaderobotics.org/pid-beginners-guide/
+    
+  boolean variables
+btn1State   A booleaan variable has only 2 states; on, off.
+btn2State   A zero is off, a one in on
+btn3State   We might also call them low (off) od on (high)
+btn4State
